@@ -1,5 +1,4 @@
-<div>
-   <h1>Ola</h1>
+<x.layouts.app>
    <livewire:projects.show : $project/>
    <livewire:projects.proposal : $project/>
-</div>
+</x.layouts.app>

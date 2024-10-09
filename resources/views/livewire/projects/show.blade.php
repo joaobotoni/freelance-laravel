@@ -1,9 +1,4 @@
 <div>
-
-
-   <pre>
-      title:{{$project->title}}
-      description:{!!$project->description!!}
-   </pre>
-
+    <h1>{{ $project->title }}</h1>
+    <p>{{ $project->description }}</p>
 </div>
