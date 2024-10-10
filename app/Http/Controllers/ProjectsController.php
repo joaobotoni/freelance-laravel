@@ -13,7 +13,6 @@ class ProjectsController extends Controller
     }
 
     public function show(Project $project) { 
-        dd($project); 
         return view('projects.show', compact('project')); 
     }
     

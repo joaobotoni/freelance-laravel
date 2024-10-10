@@ -1,4 +1,5 @@
 <x.layouts.app>
-   <livewire:projects.show : $project/>
-   <livewire:projects.proposal : $project/>
+    <livewire:projects.show :project="$project"/>
 </x.layouts.app>
+
+

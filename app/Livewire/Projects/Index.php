@@ -9,10 +9,7 @@ class Index extends Component
 {
     public function render()
     {
-        // Chama a função projects() para obter os projetos
-        $projects = $this->projects();
-        dd($projects); 
-        return view('livewire.projects.index', ['projects' => $projects]);
+        return view('livewire.projects.index');
     }
 
     public function projects() {
