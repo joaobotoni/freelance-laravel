@@ -1,5 +1,3 @@
-<x.layouts.app>
-    <title>free</title>
-   <h1>Ola mundo</h1>
-</x.layouts.app>
-
+<x-layouts.app>
+    <a href="{{ route('projects.index') }}">View Projects</a>
+</x-layouts.app>

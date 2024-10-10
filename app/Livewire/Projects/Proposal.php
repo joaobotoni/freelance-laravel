@@ -2,11 +2,12 @@
 
 namespace App\Livewire\Projects;
 
+use App\Models\Project;
 use Livewire\Component;
 
 class Proposal extends Component
 {
-    public $project; // Declare a propriedade
+    public Project $project; 
 
     public function render()
     {

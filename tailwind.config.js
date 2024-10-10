@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-      "./resources/**/*.blade.php",
+    './resources/**/*.blade.php',
   ],
   theme: {
     extend: {
-        font: {
-            sans: ['Segoe UI', 'Roboto', 'sans-serif'],
-        }
+      font:{
+        sans: ['Segoe UI', 'sans-serif'],
+      }
     },
   },
   plugins: [],

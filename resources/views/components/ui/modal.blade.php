@@ -16,6 +16,5 @@
             {{ $slot }}
         </div>
     </dialog>
-    <!-- Background Blur Overlay -->
     <div x-show="showModal" class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
 </div>

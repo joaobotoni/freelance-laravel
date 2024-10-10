@@ -1,4 +1,6 @@
 <div>
+    <h1>Projects:</h1>
+    <br>
     <ul>
         @foreach($this->projects() as $project)
             <li>

@@ -11,7 +11,6 @@ class Index extends Component
     {
         return view('livewire.projects.index');
     }
-
     public function projects() {
         return Project::query()->inRandomOrder()->get();
     }
