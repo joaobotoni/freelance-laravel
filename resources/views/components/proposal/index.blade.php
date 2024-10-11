@@ -1,6 +1,6 @@
 <x-ui.card>
     <div class="flex items-center justify-between pb-4">
-        <div class="flex flex-col ">
+        <div class="flex flex-col">
             <h2 class="text-[20px] text-white leading-9">
                 Propostas
             </h2>
@@ -10,14 +10,13 @@
         </div>
         <div class="flex items-center space-x-2">
             <x-ui.icons.people-group class="w-[18px] h-[18px]"/>
-            <span>{{ sizeOf($proposals) }}</span>
+            <span>{{ $proposals->count() }}</span>
         </div>
     </div>
-
     <div class="py-4">
         <div class="flex flex-col gap-7">
-            @foreach(array_slice($proposals,0,10) as $proposal)
-                <x-proposals.item :$proposal :position="$loop->index"/>
+            @foreach($proposals->slice(0, 10) as $proposal)
+                <x-proposal.item :$proposal :position="$loop->index"/>
             @endforeach
         </div>
 
@@ -28,5 +27,4 @@
             </button>
         </div>
     </div>
-
 </x-ui.card>

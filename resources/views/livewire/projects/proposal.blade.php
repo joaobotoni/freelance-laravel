@@ -1,4 +1,1 @@
-<div>
-    <h2>Propostas para o {{ $project->title }}</h2>
-</div>
-
+<x-proposal.index :proposals="$project->proposals"/>

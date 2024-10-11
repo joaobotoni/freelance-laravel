@@ -1,15 +1,15 @@
-props([
+@props([
     'proposal',
     'position'
 ])
 <div class="flex justify-between items-center">
     <div class="flex items-center space-x-2">
         <div>
-            <x-proposals.position :$position/>
+            <x-proposal.position :$position/>
         </div>
         <div>
             <div class="text-white text-[14px] font-bold tracking-wide">
-                {{ $proposal->author }}
+                {{ $proposal->email }}
             </div>
             <div class="text-[#8C8C9A] text-[12px]">
                 Enviado {{ $proposal->created_at->diffForHumans() }}

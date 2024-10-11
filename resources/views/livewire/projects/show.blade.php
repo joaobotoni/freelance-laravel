@@ -1,6 +1,3 @@
-
-    <div>
-        <x-project-card :project="$project" />
-    </div>
-
-
+<div>
+    <x-project-card :$project/>
+</div>
