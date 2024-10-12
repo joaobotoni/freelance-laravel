@@ -1,1 +1,1 @@
-<x-proposal.index :proposals="$project->proposals"/>
+<x-proposal.index :proposals="$this->proposals"/>
