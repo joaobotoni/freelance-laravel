@@ -5,7 +5,7 @@
 <div class="flex justify-between items-center">
     <div class="flex items-center space-x-2">
         <div>
-            <x-proposal.position :$position/>
+            <x-proposal.position :$position :status="$proposal->position_status"/>
         </div>
         <div>
             <div class="text-white text-[14px] font-bold tracking-wide">

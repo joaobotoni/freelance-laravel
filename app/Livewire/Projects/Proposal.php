@@ -9,21 +9,26 @@ use Livewire\Component;
 
 class Proposal extends Component
 {
-    public Project $project; 
+    public Project $project;
 
-    public int $quantity=5;
+    public int $quantity = 5;
 
     #[Computed()]
-    public function proposals(){
+    public function proposals()
+    {
         return $this->project->proposals()->orderBy('hours')->paginate($this->quantity);
     }
 
+
+
     #[Computed()]
-    public function lastProposalTime(){
+    public function lastProposalTime()
+    {
         return $this->project->proposals()->latest()->first()->created_at->diffForHumans();
     }
 
-    public function loadMore(){
+    public function loadMore()
+    {
         $this->quantity += 5;
     }
 
