@@ -5,5 +5,5 @@
     'bg-[#C0F7B4] text-[#1D8338] ' => $status === App\ProjectStatus::Open,
     'bg-[#FECDD3] text-[#881337] ' => $status === App\ProjectStatus::Closed
 ])}}>
-    {{ $status->label() }}  <!-- Certifique-se de que $status é um objeto -->
+    {{ $status->label() }}  
 </span>

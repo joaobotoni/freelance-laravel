@@ -2,7 +2,7 @@
     @foreach($this->projects() as $project)
         <div>
             <a href="{{ route('projects.show', $project) }}">
-                <x-project-card-simple :$project />
+                <x-project.simple :$project />
             </a>
         </div>
     @endforeach

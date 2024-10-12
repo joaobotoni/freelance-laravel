@@ -17,7 +17,6 @@ class User extends Authenticatable
         'email',
     ];
 
-
     protected function casts(): array
     {
         return [
