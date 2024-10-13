@@ -5,8 +5,10 @@ namespace App\Livewire\Proposals;
 use Livewire\Component;
 use App\Models\Project;
 use App\Models\Proposal;
+use App\Notifications\NewProposal;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
+use PhpParser\Node\Expr\New_;
 
 class Create extends Component
 {
@@ -37,6 +39,9 @@ class Create extends Component
             ['email' => $this->email],
             ['hours' => $this->hours]
         );
+
+ 
+        $this->project->author->notify(new NewProposal($this->project)); 
 
         $this->arrangePositions($proposal);
 
